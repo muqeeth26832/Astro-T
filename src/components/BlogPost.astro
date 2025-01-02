@@ -1,0 +1,15 @@
+---
+const { url, title } = Astro.props;
+---
+
+<li class="blog-post"><a href={url}>{title}</a></li>
+
+<style>
+  .blog-post {
+    color: aquamarine;
+    text-decoration: none;
+    border-radius: 1rem;
+    margin: 10px;
+    padding-top: 1rem;
+  }
+</style>
